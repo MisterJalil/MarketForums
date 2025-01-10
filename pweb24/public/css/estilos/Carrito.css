@@ -1,0 +1,156 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Garantiza que ocupen toda la altura */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container Styles */
+.container {
+    width: 800px;
+    min-height: 376px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center;
+
+}
+
+/* Title Styles */
+
+.container h1 {
+    font-size: 28px;
+    color: #0070ba; /* PayPal Blue */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Puesto Section Styles */
+.puesto-section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Producto Card Styles */
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    align-items: center;
+}
+
+.producto-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.producto-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Totales Styles */
+h2, h3 {
+    text-align: center;
+    color: #0070ba; /* PayPal Blue */
+}
+
+h3 strong,
+p strong {
+    font-size: 20px;
+    color: #0070ba; /* PayPal Blue */
+}
+
+/* Total General */
+.total-general {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px 5px;
+}
+
+/* Success Button */
+.btn-success {
+    background-color: #0070ba;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #005ea8;
+    transform: translateY(-3px);
+}
+
+.btn-success:active {
+    background-color: #004c8c;
+    transform: translateY(2px);
+}
+
+/* Empty Cart Message */
+p {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+}
+
+
+

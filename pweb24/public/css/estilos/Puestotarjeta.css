@@ -1,0 +1,88 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+/* Contenedor principal */
+.puestos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Tarjetas individuales */
+.puesto-card {
+    flex: 1 1 300px; /* Las tarjetas ocuparán al menos 300px */
+    max-width: 33%; /* Ancho máximo para pantallas grandes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.puesto-card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen de las tarjetas */
+.puesto-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Nombre del puesto */
+.puesto-nombre {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+/* Botones */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mensajes de alerta */
+.alert {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    .puesto-card {
+        flex: 1 1 100%; /* Las tarjetas ocuparán el ancho completo en móviles */
+        max-width: 100%;
+    }
+}

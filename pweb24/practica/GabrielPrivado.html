@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Introducción a SDN (Redes Definidas por Software)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #2e8b57; /* Cambiado a verde */
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav {
+      background-color: #e0e0e0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #ff8c00; /* Cambiado a naranja */
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ff4500; /* Cambiado a un naranja más oscuro */
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #b22222; /* Cambiado a rojo */
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    button {
+      background-color: #800080; /* Cambiado a púrpura */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #4b0082; /* Cambiado a un púrpura más oscuro */
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #2e8b57; /* Cambiado a verde */
+      color: white;
+    }
+    a.button-link {
+      display: inline-block;
+      background-color: #800080; /* Cambiado a púrpura */
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    a.button-link:hover {
+      background-color: #4b0082; /* Cambiado a un púrpura más oscuro */
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Introducción a SDN (Redes Definidas por Software)</h1>
+</header>
+
+<!-- Menú de navegación -->
+<nav>
+  <a href="#que-es-sdn">¿Qué es SDN?</a> |
+  <a href="#arquitectura-sdn">Arquitectura SDN</a> |
+  <a href="#ventajas">Ventajas de SDN</a> |
+  <a href="#aplicaciones">Aplicaciones de SDN</a>
+</nav>
+
+<hr>
+
+<section id="que-es-sdn">
+  <h2>¿Qué es SDN?</h2>
+  <p>Las Redes Definidas por Software (SDN) son un enfoque revolucionario que separa el plano de control del plano de datos en las redes. Esto permite una gestión centralizada y programable de los recursos de red.</p>
+  <center>
+    <img src="/storage/images/sdn.jpg" alt="Concepto de SDN">
+  </center>
+</section>
+
+<hr>
+
+<section id="arquitectura-sdn">
+  <h2>Arquitectura SDN</h2>
+  <p>La arquitectura de SDN se compone de tres capas principales: la capa de aplicación, la capa de control y la capa de infraestructura. Esta separación facilita la innovación y la implementación de servicios de red avanzados.</p>
+  <center>
+    <img src="https://www.aicox.com/wp-content/uploads/2018/04/redes-definidas-por-Software.jpg" alt="Arquitectura SDN">
+  </center>
+</section>
+
+<hr>
+
+<section id="ventajas">
+  <h2>Ventajas de SDN</h2>
+  <p>SDN ofrece múltiples ventajas, incluyendo:</p>
+  <ul>
+    <li>Mayor flexibilidad y agilidad en la gestión de redes.</li>
+    <li>Reducción de costos operativos y de capital.</li>
+    <li>Facilidad para implementar políticas de seguridad y calidad de servicio.</li>
+  </ul>
+  <center>
+    <button onclick="window.location.href='https://es.wikipedia.org/wiki/Redes_definidas_por_software'">Leer más</button>
+  </center>
+</section>
+
+<hr>
+
+<section id="comparacion">
+  <h2>Comparación entre Redes Tradicionales y SDN</h2>
+  <table>
+    <tr>
+      <th>Aspecto</th>
+      <th>Redes Tradicionales</th>
+      <th>Redes SDN</th>
+    </tr>
+    <tr>
+      <td>Arquitectura</td>
+      <td>Plano de control y plano de datos integrados en los dispositivos de red.</td>
+      <td>Plano de control y plano de datos separados, con control centralizado.</td>
+    </tr>
+    <tr>
+      <td>Gestión de la Red</td>
+      <td>Distribuida y manual, requiere configuración en cada dispositivo.</td>
+      <td>Centralizada, gestión programable desde un controlador.</td>
+    </tr>
+    <tr>
+      <td>Escalabilidad</td>
+      <td>Difícil de escalar debido a la naturaleza estática de los dispositivos de red.</td>
+      <td>Escalabilidad sencilla, puede ajustarse rápidamente mediante software.</td>
+    </tr>
+    <tr>
+      <td>Flexibilidad</td>
+      <td>Poca flexibilidad; cambios en la red requieren modificaciones físicas.</td>
+      <td>Alta flexibilidad; la red puede ser reconfigurada dinámicamente.</td>
+    </tr>
+    <tr>
+      <td>Seguridad</td>
+      <td>Políticas de seguridad aplicadas dispositivo por dispositivo.</td>
+      <td>Políticas de seguridad aplicadas globalmente desde el controlador.</td>
+    </tr>
+    <tr>
+      <td>Costos</td>
+      <td>Altos costos de hardware especializado.</td>
+      <td>Reducción de costos al utilizar hardware genérico y gestión centralizada.</td>
+    </tr>
+  </table>
+</section>
+
+<hr>
+
+<section id="aplicaciones">
+  <h2>Aplicaciones de SDN</h2>
+  <p>SDN se aplica en diversos campos como:</p>
+  <ol>
+    <li>Centros de datos</li>
+    <li>Redes de telecomunicaciones</li>
+    <li>Internet de las Cosas (IoT)</li>
+  </ol>
+  <p>Para más información sobre las aplicaciones de SDN, visite <a class="button-link" href="https://www.redhat.com/es/topics/hyperconverged-infrastructure/what-is-software-defined-networking">Red Hat - SDN</a>.</p>
+</section>
+
+<hr>
+
+<footer>
+  <p>&copy; 2024 Introducción a SDN Gabriel Lares Aspera</p>
+</footer>
+
+</body>
+</html>

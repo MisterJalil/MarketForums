@@ -1,0 +1,68 @@
+html, body {
+    height: 100%; /* Garantiza que ocupen toda la altura */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.container {
+    flex: 1; /* Asegura que la sección principal ocupe el espacio disponible */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el título */
+.container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Estilo para la lista de enlaces */
+.container ul {
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0;
+}
+
+.container ul li {
+    margin-bottom: 15px; /* Margen entre los enlaces */
+    line-height: 1.6; /* Interlineado entre líneas */
+}
+
+/* Estilo para los enlaces */
+.container ul li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #007BFF; /* Color azul para los enlaces */
+    font-size: 1.2em;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+.container ul li a:hover {
+    color: #0056b3; /* Cambia a un azul más oscuro al pasar el cursor */
+}
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    .container ul li a {
+        font-size: 1em;
+    }
+}

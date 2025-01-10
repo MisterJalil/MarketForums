@@ -1,0 +1,148 @@
+/* Estilos del grupo: Colores llamativos y personalizados */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+section {
+    padding: 2em;
+    margin: 1em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #004080;
+}
+
+button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #002f5f;
+}
+
+
+
+
+/* Cambiar el color de los hiperenlaces */
+nav ul li a {
+    color: #ff00ff; /* Fucsia llamativo para un aspecto visual destacado */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #ffeb3b; /* Amarillo brillante para resaltar al pasar el ratón */
+    color: #000000; /* Negro para contraste */
+    padding: 5px;
+    border-radius: 8px; /* Suavizar bordes */
+}
+
+/* Cambiar el color de las letras del menú y el fondo al pasar el ratón */
+nav ul {
+    background-color: #007bff; /* Azul brillante como color base */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados para diseño moderno */
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white; /* Letras blancas para buen contraste */
+}
+nav ul li a:hover {
+    background-color: #ff6347; /* Rojo tomate al pasar el ratón */
+    color: white; /* Letras permanecen blancas */
+}
+
+/* Estilo para heading h1, h2, h3 */
+h1, h2, h3 {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente llamativa para destacar títulos */
+    color: #4caf50; /* Verde brillante que resalta los encabezados */
+}
+
+/* Fondo para las secciones centrales */
+#informatics {
+    background: url('https://st3.depositphotos.com/33058382/37100/v/950/depositphotos_371005218-stock-illustration-green-matrix-background-stream-binary.jpg') no-repeat center fixed;
+    background-size: cover; /* Imagen de fondo fija, estilo tecnológico */
+    color: white;    
+}
+
+#beach-volleyball {
+    background: url('https://img.freepik.com/fotos-premium/fondo-arena-playa-textura-playa-arena-fondo-arena-playa_13920-3105.jpg') no-repeat center scroll;
+    background-size: cover; /* Imagen de fondo desplazable, estilo arena de playa */
+}
+
+/* Colores de fondo para la primera y última sección */
+section:first-of-type {
+    background-color: #000000; /* Fondo negro para impacto visual */
+    color: white; /* Letras blancas para contraste */
+}
+
+section:last-of-type {
+    background-color: #90ee90; /* Verde claro para un cierre visual relajante */
+    color: black; /* Letras negras para contraste */
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #ffa500; /* Naranja llamativo para atraer la atención */
+    color: #ffffff; /* Letras blancas para buen contraste */
+    border: 3px solid #ff4500; /* Borde rojo oscuro para énfasis */
+    padding: 10px;
+    border-radius: 12px; /* Bordes redondeados */
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s; /* Efectos de transición suaves */
+}
+
+button:hover {
+    background-color: #ff4500; /* Rojo oscuro al pasar el ratón */
+    color: #ffffff; /* Letras permanecen blancas */
+    border-color: #ffa500; /* Borde cambia a naranja */
+}
+
+/* Estilos para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados para estética moderna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+img.special {
+    border: 5px solid #00ff00; /* Borde verde brillante para destacar imágenes especiales */
+    margin: 15px;
+    border-radius: 20px; /* Bordes extra redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más profunda para énfasis */
+}

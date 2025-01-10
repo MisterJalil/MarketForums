@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria Italic, serif;
+}
+
+/* Secciones introductorias */
+.intro, .intro_2 {
+    padding: 40px;
+    text-align: center;
+}
+
+.intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url('/storage/images/mercado_altavista_intro.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 50px;
+    
+}
+
+.intro h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.intro_2 {
+    padding: 50px;
+    max-width: 1400px;
+    margin: 30px auto;
+    
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro_2 h2 {
+    font-size: 30px;
+    color: #171717;
+    margin-bottom: 15px;
+}
+
+.intro_2 p {
+    font-size: 22px;
+    color: #171717;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+/* Sección de Puestos */
+.puestos h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 30px 0 15px 0;
+}
+
+.puestos p {
+    text-align: center;
+    font-size: 22px;
+    color: #171717;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+/* Recuadros de los puestos */
+.cards {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fbf6ef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.06);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    margin-top: 10px;
+}

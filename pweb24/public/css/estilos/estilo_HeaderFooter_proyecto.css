@@ -1,0 +1,156 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria Italic, serif;
+}
+
+/* Header */
+header {
+    background-color: #171717;
+    padding: 15px; /* Reducido de 25px a 15px */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-left: 15px; /* Ajustado para mantener proporción */
+    color: white;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px; /* Reducido para ajustar el tamaño del espacio */
+    text-align: center;
+}
+
+.nav-item img {
+    width: 40px;
+    height: auto;
+}
+
+.nav-item .tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px; /* Reducido de 10px 15px a 8px 12px */
+    cursor: pointer;
+    font-size: 18px; /* Reducido de 20px a 18px */
+}
+
+.dropdown-content {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute;
+    background-color: #333;
+    min-width: 180px; /* Reducido de 200px a 180px */
+    z-index: 1;
+    border-radius: 4px;
+    text-align: left;
+    margin-top: 8px; /* Reducido de 10px a 8px */
+    padding: 5px 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 8px 12px; /* Reducido de 10px 15px */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+/* Clase para mostrar el submenú */
+.dropdown-content.show {
+    display: block;
+}
+
+/* Botón dinámico (Iniciar/Cerrar sesión) */
+.btn-session {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Reducido de 8px 15px a 6px 12px */
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-session:hover {
+    background-color: #2563eb;
+}
+
+footer {
+    background-color: #171717;
+    padding: 10px; /* Reducido de 15px a 10px */
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Asegurar el ancho completo */
+    margin-top: auto; /* Mover al final de la página */
+}
+
+footer img {
+    max-width: 20%; /* Reducido de 25% a 20% */
+}
+
+footer p {
+    font-size: 16px; /* Reducido de 20px a 16px */
+    margin-right: 20px; /* Ajustado para mantener proporción */
+}
+
+footer a { /* Aplicar estilos del header a enlaces en el footer */
+    color: white !important;
+    text-decoration: none !important;
+    margin: 0 10px !important; /* Reducido de 15px a 10px */
+    font-size: 16px !important; /* Reducido de 20px a 16px */
+    position: relative !important;
+}
+
+footer a:hover { /* Hover para enlaces del footer */
+    text-decoration: underline;
+}
+

@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.helpmycash.com/fileadmin/Users/Aval/Articles/Blog/paypal.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+/* Title Styles */
+.container h1 {
+    font-size: 28px;
+    color: #0070ba; /* PayPal Blue */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Styles */
+.paypal-logo {
+    width: 120px; /* Adjust the size */
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Puesto Section Styles */
+.puesto-section {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Producto Card Styles */
+.producto-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.producto-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.producto-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Totales Styles */
+h3 strong,
+p strong {
+    font-size: 20px;
+    color: #0070ba; /* PayPal Blue */
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Input Fields */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #0070ba;
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px 5px;
+}
+
+/* Confirm Button */
+.btn-primary {
+    background-color: #0070ba;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #005ea8;
+    transform: translateY(-3px);
+}
+
+.btn-primary:active {
+    background-color: #004c8c;
+    transform: translateY(2px);
+}
+
+/* Cancel Button */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-3px);
+}
+
+.btn-secondary:active {
+    background-color: #4e555b;
+    transform: translateY(2px);
+}
+
+/* Footer Space */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Total Section Styling */
+.total-section {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

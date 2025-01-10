@@ -1,0 +1,154 @@
+/* Cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente Arial (o sans-serif en caso de no estar disponible) */
+    text-align: center; /* Alineación central del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    margin: 0; /* Elimina los márgenes por defecto del cuerpo */
+    color: ghostwhite; /* Color del texto principal: ghostwhite (blanco pálido) */
+    background-color: #000000; /* Color de fondo negro */
+}
+/* Cabecera */
+header a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces en el header */
+    color: white; /* Color de los enlaces: blanco */
+    padding: 10px; /* Espaciado interior de 10px */
+    border: 2px solid transparent; /* Bordes transparentes iniciales en los enlaces */
+}
+
+header a:hover {
+    border-radius: 5px; /* Bordes redondeados de 5px en los enlaces al pasar el ratón */
+    transition: background-color 0.5s ease, border 0.5s ease; /* Transición suave en el color de fondo y borde (0.5s) */
+    background-color: #00489b; /* Color de fondo azul en el hover */
+    border: 2px solid ghostwhite; /* Borde blanco al pasar el ratón */
+}
+
+/* Títulos y subtítulos */
+h1 {
+    font-size: 40px; /* Tamaño de fuente de 40px para h1 */
+}
+
+h2 {
+    font-size: 30px; /* Tamaño de fuente de 30px para h2 */
+}
+
+h3 {
+    font-size: 25px; /* Tamaño de fuente de 25px para h3 */
+}
+
+p {
+    margin-left: 30px; /* Márgenes izquierdo de 30px para los párrafos */
+    margin-right: 30px; /* Márgenes derecho de 30px para los párrafos */
+}
+
+/* Secciones */
+#info_general {
+    background: linear-gradient(to bottom, #000000 0%, #303030 110%); /* Degradado de negro a gris oscuro */
+    margin: 0; /* Elimina el margen inferior */
+    padding: 20px 0; /* Relleno superior e inferior de 20px */
+}
+
+#motorizaciones {
+    background: url('/storage/logo_bmw.jpg') no-repeat center center fixed; /* Imagen de fondo fija y centrada sin repetición */
+    background-size: cover; /* La imagen cubre completamente el contenedor */
+    margin: 0; /* Elimina el margen inferior */
+    padding: 20px 0; /* Relleno superior e inferior de 20px */
+}
+
+#tecnologia {
+    background:
+        url('https://images.hdqwalls.com/download/matt-black-bmw-m3-competition-gh-2880x1800.jpg') no-repeat center center; /* Imagen centrada sin repetición */
+    background-size: cover;
+    margin: 0;
+    padding: 20px 0;
+}
+
+#pagina_oficial {
+    background: linear-gradient(to top, #303030 0%, #000000 100%); /* Degradado de gris oscuro a negro */
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Pie de página */
+footer {
+    background: black;
+    color: ghostwhite;
+    margin: 0;
+    padding: 10px 0; /* Relleno superior e inferior de 10px */
+}
+
+footer a.button {
+    text-decoration: none; /* Elimina el subrayado del botón */
+    display: inline-block; /* El botón se comporta como un bloque en línea */
+    padding: 10px 20px; /* Relleno interno de 10px en vertical y 20px en horizontal */
+    background-color: #000000;
+    color: ghostwhite;
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    border: 2px solid transparent;
+}
+
+footer a.button:hover {
+    transition: background-color 0.5s ease, border 0.5s ease;
+    background-color: #00489b;
+    border: 2px solid ghostwhite; /* Borde blanco al pasar el ratón */
+}
+
+/* Estilos de la tabla */
+table {
+    margin: 0 auto; /* Centra la tabla */
+    border-radius: 5px;
+}
+
+th {
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    color: ghostwhite;
+}
+
+td {
+    text-align: left;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* Estilos de las imágenes */
+img {
+    max-width: 35%; /* El ancho máximo de las imágenes es el 35% del contenedor */
+    border-radius: 8px; /* Bordes redondeados de 8px */
+    transition: transform 0.3s ease; /* Transición suave para el efecto zoom (0.3s) */
+    margin-top: 5px; /* Margen superior de 5px */
+}
+
+img:hover {
+    transform: scale(1.06); /* Aumenta el tamaño de la imagen un 6% al pasar el ratón */
+}
+
+/* Estilo diferente para las imágenes de la sección motorizaciones */
+#motorizaciones img {
+    max-width: 30%; /* Ancho máximo del 30% */
+    border-radius: 12px; /* Bordes redondeados de 12px */
+    border: 2px solid ghostwhite; /* Borde blanco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para zoom y sombra (0.3s) */
+    margin-top: 10px; /* Margen superior de 10px */
+}
+
+#motorizaciones img:hover {
+    transform: scale(1.08); /* Aumenta el tamaño de la imagen un 8% al pasar el ratón */
+}
+
+#pagina_oficial .button {
+    text-decoration: none; /* Elimina el subrayado del botón */
+    display: inline-block; /* El botón se comporta como un bloque en línea */
+    padding: 10px 20px; /* Relleno interno de 10px en vertical y 20px en horizontal */
+    background-color: #00489b;
+    color: ghostwhite;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease; /* Transición suave para el zoom (0.3s) */
+    margin-top: 5px; /* Margen superior de 5px */
+}
+
+#pagina_oficial .button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del botón un 5% al pasar el ratón */
+    border: 2px solid ghostwhite; /* Borde blanco al pasar el ratón */
+}

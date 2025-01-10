@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: Cambria Italic, serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url('/storage/images/fondo_trabajo.avif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    height: 100%;
+}
+
+/* Estructura principal */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: ghostwhite;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor de miembros */
+.member-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Adaptar a dispositivos más pequeños */
+    gap: 20px;
+    padding: 10px;
+}
+
+.member {
+    background-color: #fbf6ef;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(25% - 20px); /* Tres columnas con espacio entre ellas */
+    text-align: center;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del miembro */
+.member img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Nombre y descripción */
+.member h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.member p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Botón */
+a.button {
+    margin-top: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #232323FF;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+a.button:hover {
+    background-color: #878787FF;
+    transform: scale(1.1);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .member {
+        width: calc(50% - 10px); /* Dos columnas en dispositivos medianos */
+    }
+}
+
+@media (max-width: 480px) {
+    .member {
+        width: 100%; /* Una columna en dispositivos pequeños */
+    }
+}
